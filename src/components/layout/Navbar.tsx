@@ -224,7 +224,7 @@ export const UserMenu = () => {
 					</Link>
 				</Dropdown.Item>
 				<Dropdown.Item className="p-0">
-					<Link href="/settings/apikeys" className='px-3 py-2 w-full'>
+					<Link href="/settings/api-keys" className='px-3 py-2 w-full'>
 						{t("ApiKeys")}
 					</Link>
 				</Dropdown.Item>
