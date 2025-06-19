@@ -1,8 +1,8 @@
+![Z3C Logo](src/app/favicon.ico)
+
 # Z3C - Your AI Wrapper
 
 Z3C is a modern AI chat application that provides a unified interface for multiple AI models. Built with Next.js and TypeScript, it offers a seamless chat experience with various AI providers while maintaining user privacy and providing advanced features.
-
-![Z3C Logo](public/image.jpg)
 
 ## 🚀 Features
 
