@@ -83,26 +83,32 @@ Before you begin, ensure you have the following installed:
    Create a `.env.local` file in the root directory and add the following variables:
    
    ```env
-   # Database
-   MONGODB_URI=your_mongodb_connection_string
-   
    # Authentication
-   BETTER_AUTH_SECRET=your_secret_key
+   BETTER_AUTH_SECRET=your_better_auth_secret_key
    BETTER_AUTH_URL=http://localhost:3000
+   
+   # API Configuration
+   NEXT_PUBLIC_API_URL=http://localhost:3000/api/v1
+   
+   # Database
+   DATABASE_URL=your_mongodb_connection_string
+   
+   # Vercel Blob Storage
+   BLOB_READ_WRITE_TOKEN=your_vercel_blob_token
+   MASK_VERCEL_BLOB_STORAGE_URL=0
+   VERCEL_BLOB_STORAGE_URL=your_vercel_blob_storage_url
    
    # AI Provider API Keys
    Z3_OPENROUTER_API_KEY=your_openrouter_api_key
+   Z3_EXASEARCH_API_KEY=your_exa_search_api_key
    Z3_REPLICATE_API_KEY=your_replicate_api_key
-   OPENAI_API_KEY=your_openai_api_key
-   ANTHROPIC_API_KEY=your_anthropic_api_key
    
-   # Vercel Services (optional)
-   BLOB_READ_WRITE_TOKEN=your_vercel_blob_token
-   KV_REST_API_URL=your_upstash_kv_url
-   KV_REST_API_TOKEN=your_upstash_kv_token
-   
-   # Redis (optional)
-   REDIS_URL=your_redis_url
+   # Upstash KV & Redis
+   KV_URL=your_upstash_kv_url
+   KV_REST_API_URL=your_upstash_rest_api_url
+   KV_REST_API_TOKEN=your_upstash_rest_api_token
+   KV_REST_API_READ_ONLY_TOKEN=your_upstash_readonly_token
+   REDIS_URL=your_redis_connection_url
    ```
 
 4. **Database Setup**
@@ -227,8 +233,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - **Live Demo**: [https://chat.z3c.dev](https://chat.z3c.dev)
 - **Documentation**: Coming soon
-- **GitHub**: [Repository Link]
-- **Issues**: [Report Issues]
+- **GitHub**: [Repository Link](https://github.com/z3cdotdev/chat)
+- **Issues**: [Report Issues](https://github.com/z3cdotdev/chat/issues)
 
 ## 💬 Support
 
