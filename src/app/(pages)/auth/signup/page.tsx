@@ -79,7 +79,7 @@ export default function Signin() {
 					</div>
 				</div>
 			</div>
-			<div className="max-w-md mx-auto col-span-2 h-full w-full flex flex-col  justify-center text-center items-center">
+			<div className="lg:max-w-md mx-auto col-span-2 h-full w-full flex flex-col  justify-center text-center items-center">
 				<form className="w-full space-y-5" onSubmit={handleSubmit}>
 					<h1 className="text-2xl text-foreground font-bold">
 						Bir Z3C Hesabı Oluştur
