@@ -23,10 +23,6 @@ import { useTranslations } from "next-intl";
 
 const Z3CContext = createContext<any>(null);
 
-export const useZ3C = () => {
-	return useContext(Z3CContext);
-}
-
 interface Z3C {
 	id: string;
 	name: string;
@@ -717,7 +713,7 @@ function CardGroup({
 }
 
 function StandartCard({ data }: { data: any }) {
-	const fetchApp = useZ3C();
+	const fetchApp = useContext(Z3CContext);
 	const t = useTranslations("Z3CsPage");
 
 	return (
