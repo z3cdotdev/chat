@@ -56,7 +56,7 @@ export default function Signin() {
 	};
 	return (
 		<div className="grid grid-cols-3 h-screen w-full">
-			<div className="w-full h-full pr-px bg-gradient-to-br from-popover via-border to-popover">
+			<div className="w-full hidden lg:block h-full pr-px bg-gradient-to-br from-popover via-border to-popover">
 				<div className="flex h-full w-full flex-col p-20 justify-center bg-secondary">
 					<Link href="/" className="flex items-center gap-2 grayscale-100 select-none w-fit drag-none">
 						<div className="shrink-0">
