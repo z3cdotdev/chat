@@ -1,0 +1,25 @@
+{
+	"PromptInput": {
+		"Placeholder": "How can I assist you today?",
+		"Tools": {
+			"Speech_Recognition_Not_Supported": "Your browser does not support speech recognition.",
+			"Enhance_Prompt": "Enhance Prompt",
+			"Start_Dictate": "Click to dictate",
+			"Recording": "Recording...",
+			"Agent_Features": "Agent Features",
+			"Attachment_Not_Available": "This model does not support adding attachments.",
+			"Attachment": "Add Attachment ({types})",
+			"Agent_Feature_Web_Search": "Web Search",
+			"Agent_Feature_Reasoning": "Reasoning",
+			"Submit_Disabled": "You must write something to submit",
+			"Submit": "Submit"
+		},
+		"Usage_Warning": "Your prompt enhancement and model usage limits are approaching. Please check your usage.",
+		"Check_Usage": "Check Usage"
+	},
+	"HomePage": {
+		"Morning": "{is_logged_in, plural, =0 {Have a nice day!} =1 {Have a nice day, <name-mark>{name}</name-mark>!} other {Have a nice day!}}",
+		"Evening": "{is_logged_in, plural, =0 {Good evening!} =1 {Good evening, <name-mark>{name}</name-mark>!} other {Good evening!}}",
+		"Warning": "z3c.dev may make mistakes, always verify critical information."
+	}
+}

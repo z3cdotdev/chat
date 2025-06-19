@@ -1,0 +1,271 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "tailwindcss-animate";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *, .pixel, .pixel *));
+/* @custom-variant dark (&:where(.pixel, .pixel *)); */
+
+@layer base {
+
+	:root,
+	.light {
+		--primary: 255 0% 99%;
+		--secondary: 255 0% 96%;
+		--tertiary: 255 0% 94%;
+		--accent: 255 0% 90%;
+		--popover: 255 0% 99%;
+		--popover-hover: 255 0% 95%;
+		--input: 255 0% 98%;
+		--input-darker: 255 0% 90%;
+		--border: 255 0% 90%;
+		--border-hover: 255 0% 85%;
+		--foreground: 0 0% 0%;
+		--muted: 0 0% 40%;
+
+		--color-base: 20 72%;
+		--colored: var(--color-base) 57%;
+		--colored-50: var(--color-base) 77%;
+		--colored-100: var(--color-base) 72%;
+		--colored-200: var(--color-base) 67%;
+		--colored-300: var(--color-base) 62%;
+		--colored-400: var(--color-base) 57%;
+		--colored-500: var(--color-base) 52%;
+		--colored-600: var(--color-base) 47%;
+		--colored-700: var(--color-base) 42%;
+		--colored-800: var(--color-base) 37%;
+		--colored-900: var(--color-base) 32%;
+		--colored-950: var(--color-base) 27%;
+	}
+
+	.dark {
+		--theme-base: 220 10%;
+
+		--primary: var(--theme-base) 4.5%;
+		--secondary: var(--theme-base) 8%;
+		--tertiary: var(--theme-base) 10%;
+		--accent: var(--theme-base) 12%;
+		--popover: var(--theme-base) 6%;
+		--popover-hover: var(--theme-base) 12%;
+		--input: var(--theme-base) 7%;
+		--input-darker: var(--theme-base) 6%;
+		--border: var(--theme-base) 12%;
+		--border-hover: var(--theme-base) 15%;
+		--foreground: var(--theme-base) 99%;
+		--muted: var(--theme-base) 60%;
+
+		--color-base: 20 72%;
+		--colored: var(--color-base) 57%;
+		--colored-50: var(--color-base) 77%;
+		--colored-100: var(--color-base) 72%;
+		--colored-200: var(--color-base) 67%;
+		--colored-300: var(--color-base) 62%;
+		--colored-400: var(--color-base) 57%;
+		--colored-500: var(--color-base) 52%;
+		--colored-600: var(--color-base) 47%;
+		--colored-700: var(--color-base) 42%;
+		--colored-800: var(--color-base) 37%;
+		--colored-900: var(--color-base) 32%;
+		--colored-950: var(--color-base) 27%;
+	}
+
+	.pixel {
+		--primary: 0 0% 5%;
+		--secondary: 0 0% 10%;
+		--tertiary: 240 10% 10%;
+		--accent: 240 10% 12%;
+		--popover: 240 10% 8%;
+		--popover-hover: 240 10% 10%;
+		--input: 240 10% 8%;
+		--input-darker: 240 10% 6%;
+		--border: 240 10% 12%;
+		--border-hover: 240 10% 15%;
+		--foreground: 0 0% 100%;
+		--muted: 0 0% 60%;
+
+		--color-base: 103 36%;
+		--colored: var(--color-base) 57%;
+		--colored-50: var(--color-base) 77%;
+		--colored-100: var(--color-base) 72%;
+		--colored-200: var(--color-base) 67%;
+		--colored-300: var(--color-base) 62%;
+		--colored-400: var(--color-base) 57%;
+		--colored-500: var(--color-base) 52%;
+		--colored-600: var(--color-base) 47%;
+		--colored-700: var(--color-base) 42%;
+		--colored-800: var(--color-base) 37%;
+		--colored-900: var(--color-base) 32%;
+		--colored-950: var(--color-base) 27%;
+
+		--radius-xs: 0;
+		--radius-sm: 0;
+		--radius-md: 0;
+		--radius-lg: 0;
+		--radius-xl: 0;
+		--radius-2xl: 0;
+		--radius-3xl: 0;
+		--radius-4xl: 0;
+		--radius-full: 0;
+	}
+}
+
+@theme inline {
+	--color-primary: hsl(var(--primary));
+	--color-secondary: hsl(var(--secondary));
+	--color-tertiary: hsl(var(--tertiary));
+	--color-accent: hsl(var(--accent));
+	--color-popover: hsl(var(--popover));
+	--color-popover-hover: hsl(var(--popover-hover));
+	--color-input: hsl(var(--input));
+	--color-input-darker: hsl(var(--input-darker));
+	--color-border: hsl(var(--border));
+	--color-foreground: hsl(var(--foreground));
+	--color-muted: hsl(var(--muted));
+	--color-colored: hsl(var(--colored));
+	--color-border-hover: hsl(var(--border-hover));
+	--color-orange-50: hsl(var(--colored-50));
+	--color-orange-100: hsl(var(--colored-100));
+	--color-orange-200: hsl(var(--colored-200));
+	--color-orange-300: hsl(var(--colored-300));
+	--color-orange-400: hsl(var(--colored-400));
+	--color-orange-500: hsl(var(--colored-500));
+	--color-orange-600: hsl(var(--colored-600));
+	--color-orange-700: hsl(var(--colored-700));
+	--color-orange-800: hsl(var(--colored-800));
+	--color-orange-900: hsl(var(--colored-900));
+	--color-orange-950: hsl(var(--colored-950));
+	--animate-slow-spin: spin 10s linear infinite;
+	--animate-mid-spin: spin 6s linear infinite;
+	--animate-spin-2: spin 2s linear infinite;
+}
+
+@layer components {
+	* {
+		@apply box-border border-border;
+	}
+
+	/* 
+	[data-scroll-locked][data-scroll-locked] {
+		overflow-y: scroll !important;
+	} */
+
+
+	body,
+	main {
+		overflow-x: hidden;
+	}
+
+	.pixel body {
+		font-family: var(--font-pixel);
+		background-image: url('/noise.png');
+	}
+
+	.main-font-inter * {
+		font-family: var(--font-inter)
+	}
+
+	.main-font-roboto * {
+		font-family: var(--font-roboto)
+	}
+
+	.main-font-montserrat * {
+		font-family: var(--font-montserrat)
+	}
+
+	.main-font-quicksand * {
+		font-family: var(--font-quicksand)
+	}
+
+	.code-font-jetbrains-mono code {
+		font-family: var(--font-jetbrains-mono) !important;
+	}
+
+	.code-font-geist-mono code {
+		font-family: var(--font-geist-mono) !important;
+	}
+
+	.code-font-roboto-mono code {
+		font-family: var(--font-roboto-mono) !important;
+	}
+
+	.code-font-source-code-pro code {
+		font-family: var(--font-source-code-pro) !important;
+	}
+
+	body {
+		font-family: var(--font-main);
+		@apply text-foreground bg-primary;
+	}
+}
+
+@keyframes react-loading-skeleton {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.shimmer {
+	--base-color: transparent;
+	--highlight-color: var(--color-border);
+	--animation-direction: normal;
+	--animation-duration: 1s;
+	--pseudo-element-display: block;
+
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	overflow: hidden;
+}
+
+.shimmer::before {
+	content: '';
+	display: var(--pseudo-element-display, block);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-image: var(--custom-highlight-background,
+			linear-gradient(90deg,
+				var(--base-color, #eee) 0%,
+				var(--highlight-color, #f5f5f5) 50%,
+				var(--base-color, #eee) 100%));
+	transform: translateX(-100%);
+	animation-name: react-loading-skeleton;
+	animation-direction: var(--animation-direction, normal);
+	animation-duration: var(--animation-duration, 1.5s);
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	filter: blur(2px);
+}
+
+@utility drag-none {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-select: none;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in {
+	animation: fade-in 0.5s ease-out forwards;
+}
