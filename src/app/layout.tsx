@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 		icon: "/favicon.ico",
 		shortcut: "/favicon.ico",
 	},
-	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "#ffffff" },
-		{ media: "(prefers-color-scheme: dark)", color: "#000000" }
-	],
 	metadataBase: new URL("https://chat.z3c.dev"),
 	robots: {
 		index: true,

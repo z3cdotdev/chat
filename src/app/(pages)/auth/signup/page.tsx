@@ -37,7 +37,11 @@ export default function Signin() {
 			password: formData.password,
 			username: formData.username,
 			name: formData.username,
-			displayUsername: formData.username
+			displayUsername: formData.username,
+			interests: '',
+			tone: '',
+			bio: '',
+			pinned_agents: []
 		});
 
 		setLoading(false);
